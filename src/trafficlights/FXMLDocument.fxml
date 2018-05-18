@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="291.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trafficlights.FXMLDocumentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5990c" height="188.0" layoutX="146.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="84.0" />
+      <Circle fx:id="red" fill="#010b14" layoutX="188.0" layoutY="56.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yellow" fill="#010911" layoutX="188.0" layoutY="106.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="green" fill="#00070d" layoutX="188.0" layoutY="160.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+      <RadioButton fx:id="r1" layoutX="32.0" layoutY="233.0" mnemonicParsing="false" text="Red">
+         <toggleGroup>
+            <ToggleGroup fx:id="friends" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="r2" layoutX="145.0" layoutY="233.0" mnemonicParsing="false" text="Yellow" toggleGroup="$friends" />
+      <RadioButton fx:id="r3" layoutX="262.0" layoutY="233.0" mnemonicParsing="false" text="Green" toggleGroup="$friends" />
+   </children>
+</AnchorPane>
